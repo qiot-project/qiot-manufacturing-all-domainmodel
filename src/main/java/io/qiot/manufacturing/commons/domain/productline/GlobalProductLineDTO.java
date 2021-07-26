@@ -7,13 +7,13 @@ import java.util.UUID;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @RegisterForReflection
-public class GlobalProductLineDTO {
-    public UUID id;
+public class GlobalProductLineDTO extends ProductLineDTO {
+//    public UUID id;
     public Instant createdOn;
-    public SizeChartRangesDTO sizeChart;
-    public ColorRangesDTO color;
-    public PrintingRangesDTO print;
-    public PackagingRangesDTO packaging;
+//    public SizeChartRangesDTO sizeChart;
+//    public ColorRangesDTO color;
+//    public PrintingRangesDTO print;
+//    public PackagingRangesDTO packaging;
     public MarginsDTO margins;
     
 
@@ -32,6 +32,27 @@ public class GlobalProductLineDTO {
             return false;
         GlobalProductLineDTO other = (GlobalProductLineDTO) obj;
         return Objects.equals(id, other.id);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("GlobalProductLineDTO [id=");
+        builder.append(id);
+        builder.append(", sizeChart=");
+        builder.append(sizeChart);
+        builder.append(", color=");
+        builder.append(color);
+        builder.append(", print=");
+        builder.append(print);
+        builder.append(", packaging=");
+        builder.append(packaging);
+        builder.append(", createdOn=");
+        builder.append(createdOn);
+        builder.append(", margins=");
+        builder.append(margins);
+        builder.append("]");
+        return builder.toString();
     }
 
     
