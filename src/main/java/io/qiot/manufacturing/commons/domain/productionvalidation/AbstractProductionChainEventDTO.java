@@ -10,7 +10,7 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  *
  */
 @RegisterForReflection
-public abstract class AbstractProductionChainEvent {
+public abstract class AbstractProductionChainEventDTO {
     public UUID productLineId;
     public int itemId;
     public ProductionChainStageEnum stage;

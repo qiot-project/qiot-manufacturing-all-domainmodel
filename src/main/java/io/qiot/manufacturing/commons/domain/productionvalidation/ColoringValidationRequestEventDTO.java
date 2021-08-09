@@ -4,7 +4,7 @@ import io.qiot.manufacturing.commons.domain.production.ColorMetricsDTO;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @RegisterForReflection
-public class ColoringValidationRequestEvent
-        extends AbstractValidationRequestEvent {
+public class ColoringValidationRequestEventDTO
+        extends AbstractValidationRequestEventDTO {
     public ColorMetricsDTO data;
 }

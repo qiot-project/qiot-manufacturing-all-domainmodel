@@ -10,8 +10,8 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 //        @JsonSubTypes.Type(value = RequestPrintingValidationEvent.class, name = "RequestPrintingValidationEvent"),
 //        @JsonSubTypes.Type(value = RequestPackagingValidationEvent.class, name = "RequestPackagingValidationEvent") })
 @RegisterForReflection
-public class AbstractValidationRequestEvent
-        extends AbstractProductionChainEvent {
+public class AbstractValidationRequestEventDTO
+        extends AbstractProductionChainEventDTO {
     public String machineryId;
 
 }

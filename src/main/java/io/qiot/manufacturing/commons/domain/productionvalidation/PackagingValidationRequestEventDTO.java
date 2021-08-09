@@ -4,6 +4,6 @@ import io.qiot.manufacturing.commons.domain.production.PackagingMetricsDTO;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @RegisterForReflection
-public class PackagingValidationRequestEvent extends AbstractValidationRequestEvent {
+public class PackagingValidationRequestEventDTO extends AbstractValidationRequestEventDTO {
     public PackagingMetricsDTO data;
 }
