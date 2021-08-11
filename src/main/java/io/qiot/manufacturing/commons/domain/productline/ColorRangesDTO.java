@@ -10,6 +10,7 @@ public class ColorRangesDTO {
     public int greenMax;
     public int blueMin;
     public int blueMax;
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();

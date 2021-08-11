@@ -1,6 +1,7 @@
 package io.qiot.manufacturing.commons.domain.productionvalidation;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
+
 //
 //@JsonIgnoreProperties(ignoreUnknown = true)
 //@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY)
@@ -13,5 +14,20 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 public class AbstractValidationRequestEventDTO
         extends AbstractProductionChainEventDTO {
     public String machineryId;
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("AbstractValidationRequestEventDTO [productLineId=");
+        builder.append(productLineId);
+        builder.append(", itemId=");
+        builder.append(itemId);
+        builder.append(", stage=");
+        builder.append(stage);
+        builder.append(", machineryId=");
+        builder.append(machineryId);
+        builder.append("]");
+        return builder.toString();
+    }
 
 }

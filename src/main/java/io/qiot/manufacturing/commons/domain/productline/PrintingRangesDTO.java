@@ -4,8 +4,9 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @RegisterForReflection
 public class PrintingRangesDTO {
-    public double min=0;
-    public double max=1;
+    public double min = 0;
+    public double max = 1;
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();

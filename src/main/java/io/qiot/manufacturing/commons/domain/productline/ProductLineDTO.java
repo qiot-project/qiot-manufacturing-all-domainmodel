@@ -12,7 +12,6 @@ public class ProductLineDTO {
     public ColorRangesDTO color;
     public PrintingRangesDTO print;
     public PackagingRangesDTO packaging;
-    
 
     @Override
     public int hashCode() {

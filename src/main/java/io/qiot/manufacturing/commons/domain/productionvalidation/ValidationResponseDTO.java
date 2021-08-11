@@ -15,4 +15,19 @@ public class ValidationResponseDTO {
     public int itemId;
     public ProductionChainStageEnum stage;
     public boolean valid;
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("ValidationResponseDTO [productLineId=");
+        builder.append(productLineId);
+        builder.append(", itemId=");
+        builder.append(itemId);
+        builder.append(", stage=");
+        builder.append(stage);
+        builder.append(", valid=");
+        builder.append(valid);
+        builder.append("]");
+        return builder.toString();
+    }
 }

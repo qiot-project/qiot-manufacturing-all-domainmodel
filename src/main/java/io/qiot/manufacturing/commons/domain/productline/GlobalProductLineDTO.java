@@ -8,15 +8,14 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 
 @RegisterForReflection
 public class GlobalProductLineDTO extends ProductLineDTO {
-//    public UUID id;
+    // public UUID id;
     public boolean active;
     public Instant createdOn;
-//    public SizeChartRangesDTO sizeChart;
-//    public ColorRangesDTO color;
-//    public PrintingRangesDTO print;
-//    public PackagingRangesDTO packaging;
+    // public SizeChartRangesDTO sizeChart;
+    // public ColorRangesDTO color;
+    // public PrintingRangesDTO print;
+    // public PackagingRangesDTO packaging;
     public MarginsDTO margins;
-    
 
     @Override
     public int hashCode() {
@@ -56,5 +55,4 @@ public class GlobalProductLineDTO extends ProductLineDTO {
         return builder.toString();
     }
 
-    
 }

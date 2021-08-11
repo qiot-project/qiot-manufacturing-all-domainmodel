@@ -14,6 +14,7 @@ public class SizeChartRangesDTO {
     public double waistMax;
     public double hipMin;
     public double hipMax;
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
