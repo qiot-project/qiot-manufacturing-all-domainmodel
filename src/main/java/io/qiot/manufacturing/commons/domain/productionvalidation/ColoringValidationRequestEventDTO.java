@@ -3,6 +3,10 @@ package io.qiot.manufacturing.commons.domain.productionvalidation;
 import io.qiot.manufacturing.commons.domain.production.ColorMetricsDTO;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
+/**
+ * @author andreabattaglia
+ *
+ */
 @RegisterForReflection
 public class ColoringValidationRequestEventDTO
         extends AbstractValidationRequestEventDTO {

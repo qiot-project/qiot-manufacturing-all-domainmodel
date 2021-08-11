@@ -2,6 +2,10 @@ package io.qiot.manufacturing.commons.domain.productionvalidation;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
+/**
+ * @author andreabattaglia
+ *
+ */
 //
 //@JsonIgnoreProperties(ignoreUnknown = true)
 //@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY)

@@ -3,6 +3,10 @@ package io.qiot.manufacturing.commons.domain.productionvalidation;
 import io.qiot.manufacturing.commons.domain.production.SizeMetricsDTO;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
+/**
+ * @author andreabattaglia
+ *
+ */
 @RegisterForReflection
 public class WeavingValidationRequestEventDTO
         extends AbstractValidationRequestEventDTO {

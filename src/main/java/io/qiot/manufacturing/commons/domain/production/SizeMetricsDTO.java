@@ -2,6 +2,10 @@ package io.qiot.manufacturing.commons.domain.production;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
+/**
+ * @author andreabattaglia
+ *
+ */
 @RegisterForReflection
 public class SizeMetricsDTO {
     public double chest;
