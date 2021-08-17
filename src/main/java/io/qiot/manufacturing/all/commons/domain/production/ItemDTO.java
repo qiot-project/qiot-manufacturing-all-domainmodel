@@ -1,7 +1,7 @@
 /**
  * 
  */
-package io.qiot.manufacturing.commons.domain.production;
+package io.qiot.manufacturing.all.commons.domain.production;
 
 import java.util.UUID;
 
