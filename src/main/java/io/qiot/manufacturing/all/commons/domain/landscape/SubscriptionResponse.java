@@ -10,6 +10,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 /**
+ * Object containing the response from the plant manager or the facility manager
+ * 
  * @author andreabattaglia
  *
  */
