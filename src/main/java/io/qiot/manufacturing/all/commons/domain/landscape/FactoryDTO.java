@@ -1,20 +1,15 @@
 package io.qiot.manufacturing.all.commons.domain.landscape;
 
-import java.time.Instant;
 import java.util.Objects;
-import java.util.UUID;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
+/**
+ * @author andreabattaglia
+ *
+ */
 @RegisterForReflection
-public class FactoryDTO  {
-    public UUID id;
-    public String serial;
-    public String name;
-    @JsonProperty(value = "registered_on")
-    public Instant registeredOn;
+public class FactoryDTO extends AbstractLandscapeDTO {
 
     @Override
     public int hashCode() {
@@ -36,7 +31,7 @@ public class FactoryDTO  {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append("MachineryDTO [id=");
+        builder.append("FactoryDTO [id=");
         builder.append(id);
         builder.append(", serial=");
         builder.append(serial);
@@ -47,4 +42,5 @@ public class FactoryDTO  {
         builder.append("]");
         return builder.toString();
     }
+    
 }
