@@ -1,4 +1,4 @@
-package io.qiot.manufacturing.all.commons.domain.event;
+package io.qiot.manufacturing.all.commons.domain.cdi;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
