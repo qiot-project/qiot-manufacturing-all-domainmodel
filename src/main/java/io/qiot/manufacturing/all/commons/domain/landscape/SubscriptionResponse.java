@@ -3,6 +3,7 @@
  */
 package io.qiot.manufacturing.all.commons.domain.landscape;
 
+import java.time.Instant;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,4 +25,6 @@ public class SubscriptionResponse {
     public String truststore;
     @JsonProperty("keystore")
     public String keystore;
+    @JsonProperty("subscribed_on")
+    public Instant subscribedOn;
 }
