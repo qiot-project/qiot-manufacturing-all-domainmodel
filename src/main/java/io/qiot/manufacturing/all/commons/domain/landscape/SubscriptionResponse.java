@@ -25,6 +25,10 @@ public class SubscriptionResponse {
     public String truststore;
     @JsonProperty("keystore")
     public String keystore;
+    @JsonProperty("tlsCert")
+    public String tlsCert;
+    @JsonProperty("tlsKey")
+    public String tlsKey;
     @JsonProperty("subscribed_on")
     public Instant subscribedOn;
 }
